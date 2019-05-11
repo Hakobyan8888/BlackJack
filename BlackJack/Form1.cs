@@ -12,9 +12,20 @@ namespace BlackJack
 {
     public partial class Form1 : Form
     {
+        public int num = 0;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Number.Text = $"{++num}";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Number.Text = $"{--num}";
         }
     }
 }
